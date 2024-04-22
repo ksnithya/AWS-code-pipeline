@@ -8,3 +8,9 @@ While creating EC2 instance role. Need to add below policies to it.
 While creating CodeDeploy role. Add below policy
 1. Choose use case as "CodeDepoly"
 2. Policy "AWSCodeDeployRole" by default it will be added.
+
+Need to add below environment variable in codebuild stage.
+$AWS_REGION = ************
+$ECR_ID = *****************
+$REPO_IMAGE = *********
+$TAG = ***********
