@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+    - location: dockerInstall.sh
+      runas: root
+  ValidateService:
+    - location: MonitorService.sh
+      timeout: 3600
+      runas: root
