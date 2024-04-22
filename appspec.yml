@@ -8,3 +8,6 @@ hooks:
     - location: MonitorService.sh
       timeout: 3600
       runas: root
+artifacts:
+  files:
+    - '**/*'
